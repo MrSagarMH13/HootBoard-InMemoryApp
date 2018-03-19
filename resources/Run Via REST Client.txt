@@ -1,0 +1,89 @@
+1. GET ALL USERS
+HTTP Method: GET
+URL: http://localhost:8080/api/v1/user/get-all
+
+2. ADD USER
+URL: http://localhost:8080/api/v1/user/new
+HTTP Method: POST
+Request Data:
+	Type: JSON
+	
+	{
+  "userId": "",
+  "firstName": "User",
+  "lastName": "name",
+  "emails": [
+    {
+      "emailId": "",
+      "email": "sshinde@info.com"
+    },
+    {
+      "emailId": "",
+      "email": "sshinde@myname.com"
+    }
+  ],
+  "addresses": [
+    {
+      "addressId": "",
+      "addressLine1": "Test1",
+      "addressLine2": "Test2",
+      "city": "Test City",
+      "country": "Test Country",
+      "postalCode": "411044"
+    },
+    {
+      "addressId": "",
+      "addressLine1": "Test3",
+      "addressLine2": "Test4",
+      "city": "Test City 1",
+      "country": "Test country 2",
+      "postalCode": "413324"
+    }
+  ]
+}
+
+3. UPDATE USER
+URL: http://localhost:8080/api/v1/user/new
+HTTP Method: POST
+Request Data:
+	Type: JSON
+	
+	{
+  "userId": "2",
+  "firstName": "Sagar Upd",
+  "lastName": "Shinde upd",
+  "emails": [
+    {
+      "emailId": "1",
+      "email": "sagupd@gmail.com"
+    },
+    {
+      "emailId": "2",
+      "email": "sagarupd@hotmail.com"
+    }
+  ],
+  "addresses": [
+    {
+      "addressId": "2",
+      "addressLine1": "Test1",
+      "addressLine2": "Test2",
+      "city": "Test City",
+      "country": "Test Country",
+      "postalCode": "411044"
+    },
+    {
+      "addressId": "3",
+      "addressLine1": "Test3",
+      "addressLine2": "Test4",
+      "city": "Test City 1",
+      "country": "Test country 2",
+      "postalCode": "413324"
+    }
+  ]
+}
+
+4. DELETE USER
+HTTP Method: DELETE
+URL: http://localhost:8080/api/v1/user/delete/<UserId>
+Request Data:
+	Type: Path Variable
